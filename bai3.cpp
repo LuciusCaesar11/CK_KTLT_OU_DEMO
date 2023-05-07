@@ -101,7 +101,7 @@ void timSvFromFile()
 			line.erase(0, pos6 + 1);
 
 			sinhvien->DCK = stod(line);
-			double DTK = (sinhvien->DQT) * (40/100) +(sinhvien->DCK) * (60/100) ;
+			double DTK = (sinhvien->DQT) * (0.4) +(sinhvien->DCK) * (0.6) ;
 			xuat1sv(*sinhvien, DTK);
 			found = true;
 			system("pause");
