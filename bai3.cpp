@@ -124,9 +124,9 @@ int main()
 		cout << "nhap so luong sinh vien: ";
 		cin >> n;
 		getchar();
-		if (n < 1 && n>50)
+		if (n < 1 || n>50)
 			cout << "nhap lai di ";
-	} while (n < 1 && n>50);
+	} while (n < 1 || n>50);
 	SINHVIEN *sv = new SINHVIEN[n];
 	while (true)
 	{
